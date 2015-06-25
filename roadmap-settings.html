@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content=""/>
 
-    <title>RankHacker Roadmap Settings</title>
+    <title>RankHacker - Roadmap Settings</title>
     <meta name="description" content="RankHacker Admin Panel"/>
 
     <link rel="stylesheet" href="js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
@@ -64,7 +64,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="roadmaps.html">
                                 <span class="title">fairmarketing.com</span>
                             </a>
                         </li>
@@ -81,7 +81,7 @@
                         <li>
                             <a href="javascript:;" onclick="jQuery('#create-project').modal('show', {backdrop: 'static'});">
                                 <i class="entypo-plus"></i>
-                                <span class="title">add new project</span>
+                                <span class="title">create new project</span>
                             </a>
                         </li>
                     </ul>
@@ -95,6 +95,7 @@
                         <span class="title">Account</span>
                     </a>
                     <ul>
+                        <!--
                         <li>
                             <a href="#">
                                 <i class="entypo-user"></i>
@@ -102,17 +103,18 @@
 
                             </a>
                         </li>
+                        -->
                         <li>
-                            <a href="#">
+                            <a href="account-settings.html">
                                 <i class="entypo-cog"></i>
                                 <span class="title">Account Settings</span>
 
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="billing.html">
                                 <i class="fa fa-usd"></i>
-                                <span class="title">Billing History</span>
+                                <span class="title">Order History</span>
                             </a>
                         </li>
                     </ul>
@@ -136,7 +138,7 @@
     </header>
 
 
-    <div id="roadmap-list" class="main-content container-fluid">
+    <div id="roadmap-settings" class="main-content container-fluid">
 
         <div class="row">
             <div class="col-md-10 col-md-push-1 data-container">
@@ -154,7 +156,7 @@
                             </div>
                         </div>
                         <div class="row well well-sm">
-                            <h4><i class="entypo-folder"></i>Project: <span class="project-name">fairmarketing.com</span></h4>
+                            <h4><i class="entypo-folder"></i>Project: <a href="roadmaps.html" class="project-name">fairmarketing.com</a></h4>
                             <h4><i class="entypo-map"></i>Roadmap: <span class="project-name">houston plumbing specialist</span></h4>
                         </div>
                     </div>
@@ -201,8 +203,8 @@
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <div  class="row well well-sm">
-                                            <h3>Details</h3>
-                                            <p>Enter the roadmap details.</p>
+                                            <h3>Keyword & Location</h3>
+                                            <p>The keyword and geographic location that this roadmap is targeting.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -224,14 +226,14 @@
                                     <div class="col-md-12">
                                         <div  class="row well well-sm">
                                             <h3>Agressiveness</h3>
-                                            <p>Decide how agressive you want to be.</p>
+                                            <p>Decide how agressive your publication schedule to be.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <ul id="algorithm" class="icheck-list">
                                             <li class="col-md-3 algorithm-match">
-                                                <input tabindex="3" class="iradio_square-red" type="radio" id="algorithm-radio-match" name="algorithm-radio" value="match" checked>
-                                                <label for="algorithm-radio-match">Match</label>
+                                                <input tabindex="3" class="iradio_square-red inline-check" type="radio" id="algorithm-radio-match" name="algorithm-radio" value="match" checked>
+                                                <label for="algorithm-radio-match">Match Competitors</label>
                                                 <br /><br />
                                                 <div class="tile-stats tile-white tile-white-primary hidden">
                                                     <h6>MATCH COMPETITORS</h6>
@@ -241,19 +243,20 @@
 
                                             </li>
                                             <li class="col-md-3 algorithm-beat">
-                                                <input tabindex="4" class="iradio_square-red" type="radio" id="algorithm-radio-beat" name="algorithm-radio" value="beat">
-                                                <label for="algorithm-radio-beat">Beat</label>
+                                                <input tabindex="4" class="iradio_square-red inline-check" type="radio" id="algorithm-radio-beat" name="algorithm-radio" value="beat">
+                                                <label for="algorithm-radio-beat">Beat Competitors</label>
                                                 <br /><br />
                                                 <div class="tile-stats tile-white tile-white-primary hidden slider-container">
                                                     <h6>BEAT COMPETITORS</h6>
                                                     <p>Select this option to beat your competition's publication schedule.</p>
+                                                    <br />
                                                     <h6>How much more content you would like to publish?</h6>
                                                     <br /><br /><br />
                                                     <div class="beat-slider"></div>
                                                 </div>
                                             </li>
                                             <li class="col-md-3 algorithm-evolutionary">
-                                                <input tabindex="6" class="iradio_square-red" type="radio" id="algorithm-radio-evolutionary" name="algorithm-radio" value="evolutionary">
+                                                <input tabindex="6" class="iradio_square-red inline-check" type="radio" id="algorithm-radio-evolutionary" name="algorithm-radio" value="evolutionary">
                                                 <label for="algorithm-radio-evolutionary">Evolutionary</label>
                                                 <div class="tile-stats tile-white tile-white-primary hidden">
                                                     <h6>EVOLVE</h6>
@@ -268,7 +271,7 @@
                                     <div class="col-md-12">
                                         <div  class="row well well-sm">
                                             <h3>Timeline</h3>
-                                            <p>Use the slider below to adjust the campaign timeline. This will affect your budget.</p>
+                                            <p>Use the slider below to adjust the roadmap timeline. This will affect your budget.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-8">
@@ -289,7 +292,7 @@
                                     <div class="col-md-12">
                                         <div  class="row well well-sm">
                                             <h3>Budget</h3>
-                                            <p>Use the slider below to adjust the campaign budget. This will affect your timeline.</p>
+                                            <p>Use the slider below to adjust the roadmap budget. This will affect your timeline.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-8">
@@ -473,12 +476,6 @@
 
                             <!-- Filters -->
                             <form class="tab-pane" id="filters">
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <h3>Roadmap Filters</h3>
-                                        <p>Adjust your roadmap by setting filter criteria for competitor backlinks.</p>
-                                    </div>
-                                </div>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="row well well-sm ">
@@ -510,6 +507,7 @@
                                     <div class="col-md-12">
                                         <div  class="row well well-sm">
                                             <h3>Domain Filters</h3>
+                                            <p>You may restrict the backlinks withing your competitor's backlink profiles to only include backlinks originating from a designated list of domains. You may also exclude backlinks originating from a list of domains.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -552,7 +550,7 @@
                                     </div>
                                     <div class="col-md-2">
                                         <input type="checkbox" class="icheckbox_square-yellow inline-check" id="health-filter-disavowed">
-                                        <label for="health-filter-disavowed">Disavowed</label>
+                                        <label for="health-filter-disavowed" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Selecting the Disavowed filter will include a list of disavowed backlinks in this roadmap. Deselecting the Disavowed filter will exclude a list of disavowed links from this roadmap. Click the edit icon to modify the list of disavowed backlinks." data-original-title="Disavowed Filter">Disavowed<a href="javascript:;" onclick="jQuery('#health-filter-disavowed-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
                                     </div>
                                 </div>
                                 <div class="row form-group">
@@ -592,18 +590,22 @@
                                                 <input tabindex="6" type="checkbox" class="icheckbox_square-yellow" id="content-filter-news" checked>
                                                 <label for="content-filter-news">News</label>
                                             </li>
-                                            <li>
-                                                <input type="checkbox" class="icheckbox_square-yellow" id="content-filter-social" checked>
-                                                <label for="content-filter-social">Social</label>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div class="col-md-2">
                                         <ul class="icheck-list">
                                             <li>
+                                                <input type="checkbox" class="icheckbox_square-yellow" id="content-filter-social" checked>
+                                                <label for="content-filter-social">Social</label>
+                                            </li>
+                                            <li>
                                                 <input type="checkbox" class="icheckbox_square-yellow" id="content-filter-press-release" checked>
                                                 <label for="content-filter-press-release">Press Release</label>
                                             </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <ul class="icheck-list">
                                             <li>
                                                 <input type="checkbox" class="icheckbox_square-yellow" id="content-filter-directory">
                                                 <label for="content-filter-directory">Directory</label>
@@ -624,18 +626,22 @@
                                                 <input type="checkbox" class="icheckbox_square-yellow" id="content-filter-forum">
                                                 <label for="content-filter-forum">Forum</label>
                                             </li>
-                                            <li>
-                                                <input type="checkbox" class="icheckbox_square-yellow" id="content-filter-wiki">
-                                                <label for="content-filter-wiki">Wiki</label>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div class="col-md-2">
                                         <ul class="icheck-list">
                                             <li>
+                                                <input type="checkbox" class="icheckbox_square-yellow" id="content-filter-wiki">
+                                                <label for="content-filter-wiki">Wiki</label>
+                                            </li>
+                                            <li>
                                                 <input type="checkbox" class="icheckbox_square-yellow" id="content-filter-product">
                                                 <label for="content-filter-product">Product</label>
                                             </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <ul class="icheck-list">
                                             <li>
                                                 <input type="checkbox" class="icheckbox_square-yellow" id="content-filter-article">
                                                 <label for="content-filter-article">Article</label>
@@ -654,11 +660,11 @@
                                         <ul class="icheck-list">
                                             <li>
                                                 <input tabindex="5" type="checkbox" class="icheckbox_square-yellow" id="anchor-filter-url" checked>
-                                                <label for="anchor-filter-url-settings">URL<a href="javascript:;" onclick="jQuery('#anchor-filter-url-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
+                                                <label for="anchor-filter-url-settings" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The URL filter will tag anchor text that has specific URLs in it. Click the edit icon to modify the list of URLs." data-original-title="URL Filter">URL<a href="javascript:;" onclick="jQuery('#anchor-filter-url-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
                                             </li>
                                             <li>
                                                 <input tabindex="6" type="checkbox" class="icheckbox_square-yellow" id="anchor-filter-exact" checked>
-                                                <label for="anchor-filter-exact">Exact<a href="javascript:;" onclick="jQuery('#anchor-filter-exact-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
+                                                <label for="anchor-filter-exact" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The Exact filter will tag anchor text that exactly matches certain phrases. Click the edit icon to modify the list of phrases." data-original-title="Exact Filter">Exact<a href="javascript:;" onclick="jQuery('#anchor-filter-exact-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
                                             </li>
                                         </ul>
                                     </div>
@@ -666,11 +672,11 @@
                                         <ul class="icheck-list">
                                             <li>
                                                 <input type="checkbox" class="icheckbox_square-yellow" id="anchor-filter-partial">
-                                                <label for="anchor-filter-partial">Partial<a href="javascript:;" onclick="jQuery('#anchor-filter-partial-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
+                                                <label for="anchor-filter-partial" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The Partial filter will tag anchor text that contains one or more keywords from a list of designated keywords. Click the edit icon to modify the list of keywords." data-original-title="Partial Filter">Partial<a href="javascript:;" onclick="jQuery('#anchor-filter-partial-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" class="icheckbox_square-yellow" id="anchor-filter-brand" checked>
-                                                <label for="anchor-filter-brand">Brand<a href="javascript:;" onclick="jQuery('#anchor-filter-brand-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
+                                                <label for="anchor-filter-brand" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The Branded filter will tag anchor text that contains any of the designated brand terms. Click the edit icon to modify the list of brand terms." data-original-title="Branded Filter">Branded<a href="javascript:;" onclick="jQuery('#anchor-filter-brand-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
                                             </li>
                                         </ul>
                                     </div>
@@ -678,11 +684,11 @@
                                         <ul class="icheck-list">
                                             <li>
                                                 <input type="checkbox" class="icheckbox_square-yellow" id="anchor-filter-action" checked>
-                                                <label for="anchor-filter-action">Action<a href="javascript:;" onclick="jQuery('#anchor-filter-action-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
+                                                <label for="anchor-filter-action" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The Action filter will tag anchor text that has specific action terms in it. Click the edit icon to modify the list URLs." data-original-title="Action Filter">Action<a href="javascript:;" onclick="jQuery('#anchor-filter-action-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" class="icheckbox_square-yellow" id="anchor-filter-image" checked>
-                                                <label for="anchor-filter-image">Image</label>
+                                                <label for="anchor-filter-image" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The Image filter will tag images." data-original-title="Image Filter">Image</label>
                                             </li>
                                         </ul>
                                     </div>
@@ -690,11 +696,11 @@
                                         <ul class="icheck-list">
                                             <li>
                                                 <input type="checkbox" class="icheckbox_square-yellow" id="anchor-filter-local" checked>
-                                                <label for="anchor-filter-local">Local<a href="javascript:;" onclick="jQuery('#anchor-filter-local-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
+                                                <label for="anchor-filter-local" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The Local filter will tag anchor text that has specific locations in it. Click the edit icon to modify the list of locations." data-original-title="Local Filter">Local<a href="javascript:;" onclick="jQuery('#anchor-filter-local-settings').modal('show', {backdrop: 'static'});"><sup><i class="entypo-pencil"></i></sup></a></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" class="icheckbox_square-yellow" id="anchor-filter-other">
-                                                <label for="anchor-filter-other">Other</label>
+                                                <label for="anchor-filter-other" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The Other filter will tag anchor text that has not otherwise been classified." data-original-title="Other Filter">Other</label>
                                             </li>
                                         </ul>
                                     </div>
@@ -1083,6 +1089,45 @@
     &copy; 2015 <strong>RankHacker</strong>
 </footer>
 
+<!-- CREATE PROJECT -->
+<div class="modal fade" id="create-project">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title"><i class="entypo-folder"></i>CREATE NEW PROJECT</h3>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="form-group">
+                            <label for="field-project-domain" class="control-label">Project Domain</label>
+
+                            <input type="text" class="form-control" id="field-project-domain" placeholder="Enter the domain URL for the new project">
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-icon btn-success">
+                    Create
+                    <i class="entypo-plus"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- FILTER TEMPLATES -->
 <div class="modal fade" id="filter-templates">
     <div class="modal-dialog">
@@ -1113,18 +1158,15 @@
 <div class="modal fade" id="anchor-filter-url-settings">
     <div class="modal-dialog">
         <div class="modal-content">
-
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h3 class="modal-title"><i class="fa fa-filter"></i>URL FILTER SETTINGS</h3>
             </div>
-
             <div class="modal-body">
-
                 <div class="row form-group">
                     <div class="col-md-12">
                         <h4>Description</h4>
-                        <p>The URL filter allows you to filter anchor text that is tagged as the URL type. You may include only backlinks that have anchor text with specific URLs. You may also exclude backlinks that have anchor text with specific URLs.</p>
+                        <p>The URL filter allows you to filter anchor text that is tagged as the URL type. You may include backlinks that have anchor text that contains specific URLs. You may also exclude backlinks that have anchor text that contains specific URLs.</p>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -1134,7 +1176,7 @@
                                 <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-include" checked>
                                 <span class="h4">Current URLs</span>
                             </label>
-                            <p>Include the current list of URLs.</p>
+                            <p>Include the current list of URLs set for this project.</p>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -1164,9 +1206,9 @@
                             <div  class="row well well-sm">
                                 <label for="backlinks-keywords-include">
                                     <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-include">
-                                    <span class="h4">Include</span>
+                                    <span class="h4">Include Additional URLs</span>
                                 </label>
-                                <p>Include only backlinks with the following URLs in the anchor text.</p>
+                                <p>Include backlinks with the following URLs in the anchor text.</p>
                             </div>
                             <div>
                                 <textarea class="form-control autogrow" id="keywords-list" placeholder="input one URL per line"></textarea>
@@ -1176,10 +1218,9 @@
                     <div class="row form-group">
                         <div class="col-md-12">
                             <div  class="row well well-sm">
-
                                 <label for="backlinks-keywords-exclude">
                                     <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-exclude">
-                                    <span class="h4">Exclude</span>
+                                    <span class="h4">Exclude These URLs</span>
                                 </label>
                                 <p>Exclude backlinks with the following URLs in the anchor text.</p>
                             </div>
@@ -1189,9 +1230,7 @@
                         </div>
                     </div>
                 </form>
-
             </div>
-
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Exit</button>
                 <button type="button" class="btn btn-info">Save</button>
@@ -1204,18 +1243,15 @@
 <div class="modal fade" id="anchor-filter-exact-settings">
     <div class="modal-dialog">
         <div class="modal-content">
-
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h3 class="modal-title"><i class="fa fa-filter"></i>EXACT MATCH FILTER SETTINGS</h3>
             </div>
-
             <div class="modal-body">
-
                 <div class="row form-group">
                     <div class="col-md-12">
                         <h4>Description</h4>
-                        <p>The Exact Match filter allows you to filter anchor text that is tagged as the Exact Match type. You may include only backlinks that have anchor text that exactly matches certain phrases. You may also exclude backlinks that have anchor text that exactly matches certain phrases.</p>
+                        <p>The Exact Match filter allows you to filter anchor text that is tagged as the Exact Match type. You may include backlinks that have anchor text that exactly matches certain phrases. You may also exclude backlinks that have anchor text that exactly matches certain phrases.</p>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -1223,9 +1259,9 @@
                         <div  class="row well well-sm">
                             <label for="backlinks-keywords-include">
                                 <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-include" checked>
-                                <span class="h4">Current Exact Match Terms</span>
+                                <span class="h4">Current Exact Match Phrases</span>
                             </label>
-                            <p>Include the current list of of exact match terms.</p>
+                            <p>Include the current list of of exact match phrases set for this project.</p>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -1246,9 +1282,9 @@
                             <div  class="row well well-sm">
                                 <label for="backlinks-keywords-include">
                                     <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-include">
-                                    <span class="h4">Include</span>
+                                    <span class="h4">Include Additional Exact Match Phrases</span>
                                 </label>
-                                <p>Include only backlinks with the following exact phrases as anchor text.</p>
+                                <p>Include backlinks with the following exact phrases as anchor text.</p>
                             </div>
                             <div>
                                 <textarea class="form-control autogrow" id="keywords-list" placeholder="input one phrase per line"></textarea>
@@ -1261,7 +1297,7 @@
 
                                 <label for="backlinks-keywords-exclude">
                                     <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-exclude">
-                                    <span class="h4">Exclude</span>
+                                    <span class="h4">Exclude These Exact Match Phrases</span>
                                 </label>
                                 <p>Exclude backlinks with the following exact phrases as anchor text.</p>
                             </div>
@@ -1271,9 +1307,7 @@
                         </div>
                     </div>
                 </form>
-
             </div>
-
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Exit</button>
                 <button type="button" class="btn btn-info">Save</button>
@@ -1294,7 +1328,7 @@
                 <div class="row form-group">
                     <div class="col-md-12">
                         <h4>Description</h4>
-                        <p>The Partial Match filter allows you to filter anchor text that is tagged as the Partial Match type. You may include only backlinks that have anchor text that contains certain keywords. You may also exclude backlinks that have anchor text that contains certain keywords.</p>
+                        <p>The Partial Match filter allows you to filter anchor text that is tagged as the Partial Match type. You may include backlinks that have anchor text that contains certain keywords. You may also exclude backlinks that have anchor text that contains certain keywords.</p>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -1304,7 +1338,7 @@
                                 <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-include" checked>
                                 <span class="h4">Current Partial Match Terms</span>
                             </label>
-                            <p>Include the current list of partial match terms.</p>
+                            <p>Include the current list of partial match terms set for this project.</p>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -1327,9 +1361,9 @@
                             <div  class="row well well-sm">
                                 <label for="backlinks-keywords-include">
                                     <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-include">
-                                    <span class="h4">Include</span>
+                                    <span class="h4">Include Additional Partial Match Terms</span>
                                 </label>
-                                <p>Include only backlinks with the following keywords within the anchor text.</p>
+                                <p>Include backlinks with the following keywords within the anchor text.</p>
                             </div>
                             <div>
                                 <textarea class="form-control autogrow" id="keywords-list" placeholder="input one keyword per line"></textarea>
@@ -1342,7 +1376,7 @@
 
                                 <label for="backlinks-keywords-exclude">
                                     <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-exclude">
-                                    <span class="h4">Exclude</span>
+                                    <span class="h4">Exclude These Partial Match Terms</span>
                                 </label>
                                 <p>Exclude backlinks with the following keywords in the anchor text.</p>
                             </div>
@@ -1352,9 +1386,7 @@
                         </div>
                     </div>
                 </form>
-
             </div>
-
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Exit</button>
                 <button type="button" class="btn btn-info">Save</button>
@@ -1370,17 +1402,16 @@
 
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="modal-title"><i class="fa fa-filter"></i>BRAND FILTER SETTINGS</h3>
+                <h3 class="modal-title"><i class="fa fa-filter"></i>BRANDED FILTER SETTINGS</h3>
             </div>
-
             <div class="modal-body">
                 <div class="row form-group">
                     <div class="col-md-12">
                         <h4>Description</h4>
-                        <p>The Brand filter allows you to filter anchor text that is tagged as the Partial Match type. You may include only backlinks that have anchor text that contains certain keywords. You may also exclude backlinks that have anchor text that contains certain keywords.</p>
+                        <p>The Branded filter allows you to filter anchor text that is tagged as the Branded type. Add branding terms for each of your competitors to properly tag anchor text.</p>
                     </div>
                 </div>
-                <div class="row form-group">
+                <div class="row">
                     <div class="col-md-12">
                         <div class="row well well-sm">
                             <div class="col-md-12">
@@ -1396,7 +1427,7 @@
                             <thead>
                             <tr>
                                 <th>Competitor Domain</th>
-                                <th>Branding Terms</th>
+                                <th>Add Branding Terms</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -1484,9 +1515,7 @@
                         </table>
                     </div>
                 </form>
-
             </div>
-
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Exit</button>
                 <button type="button" class="btn btn-info">Save</button>
@@ -1506,12 +1535,18 @@
             <div class="modal-body">
                 <div class="row form-group">
                     <div class="col-md-12">
+                        <h4>Description</h4>
+                        <p>The Action filter allows you to filter anchor text that is tagged as the Action type. You may include backlinks that have anchor text that contains specific Action phrases. You may also exclude backlinks that have anchor text that contains specific Action phrases.</p>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
                         <div  class="row well well-sm">
                             <label for="backlinks-keywords-include">
                                 <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-include" checked>
-                                <span class="h4">Default Action Terms</span>
+                                <span class="h4">Default Action Phrases</span>
                             </label>
-                            <p>Include the default list of action terms.</p>
+                            <p>Include the default list of action phrases.</p>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -1599,21 +1634,34 @@
                         <div class="col-md-12">
                             <div  class="row well well-sm">
 
-                                <label for="backlinks-keywords-exclude">
-                                    <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-exclude">
-                                    <span class="h4">Additional Action Terms</span>
+                                <label for="backlinks-keywords-include">
+                                    <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-include">
+                                    <span class="h4">Include Additional Action Phrases</span>
                                 </label>
-                                <p>Include a list of addtional action terms.</p>
+                                <p>Include a list of additional action phrases. Anchor text that contains any of the action phrases you add to this list will be tagged with the Action tag.</p>
                             </div>
                             <div>
-                                <textarea class="form-control autogrow" id="field-ta" placeholder="input one action term per line"></textarea>
+                                <textarea class="form-control autogrow" id="field-ta" placeholder="input one action phrase per line"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <div  class="row well well-sm">
+
+                                <label for="backlinks-keywords-exclude">
+                                    <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-exclude">
+                                    <span class="h4">Exclude These Action Phrases</span>
+                                </label>
+                                <p>Exclude backlinks with the following action phrases in the anchor text.</p>
+                            </div>
+                            <div>
+                                <textarea class="form-control autogrow" id="field-ta" placeholder="input one action phrase per line"></textarea>
                             </div>
                         </div>
                     </div>
                 </form>
-
             </div>
-
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Exit</button>
                 <button type="button" class="btn btn-info">Save</button>
@@ -1634,7 +1682,7 @@
                 <div class="row form-group">
                     <div class="col-md-12">
                         <h4>Description</h4>
-                        <p>The Local filter allows you to filter anchor text that is tagged as the Local type. You may include only backlinks that have anchor text that contains certain local terms. You may also exclude backlinks that have anchor text that contains certain local terms.</p>
+                        <p>The Local filter allows you to filter anchor text that is tagged as the Local type.</p>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -1642,9 +1690,9 @@
                         <div  class="row well well-sm">
                             <label for="backlinks-keywords-include">
                                 <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-include" checked>
-                                <span class="h4">Current Local Terms</span>
+                                <span class="h4">Current Locations</span>
                             </label>
-                            <p>Include the default list of local terms.</p>
+                            <p>Include the current locations set for this project.</p>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -1653,6 +1701,8 @@
                                 <div class="scrollable" data-height="80">
                                     <ul>
                                         <li>houston, tx</li>
+                                        <li>houston</li>
+                                        <li>tx</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1663,15 +1713,83 @@
                     <div class="row form-group">
                         <div class="col-md-12">
                             <div  class="row well well-sm">
-
                                 <label for="backlinks-keywords-exclude">
                                     <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-exclude">
-                                    <span class="h4">Additional Local Terms</span>
+                                    <span class="h4">Additional Locations</span>
                                 </label>
-                                <p>Include a list of addtional local terms.</p>
+                                <p>Include a list of additional locations. Anchor text that contains any of the locations you add to this list will be tagged with the Local tag.</p>
                             </div>
                             <div>
-                                <textarea class="form-control autogrow" id="field-ta" placeholder="input one local term per line"></textarea>
+                                <textarea class="form-control autogrow" id="field-ta" placeholder="input one location per line"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <div  class="row well well-sm">
+                                <label for="backlinks-keywords-exclude">
+                                    <input tabindex="5" type="checkbox" class="icheckbox_square-yellow inline-check" id="backlinks-keywords-exclude">
+                                    <span class="h4">Exclude These Locations</span>
+                                </label>
+                                <p>Exclude backlinks with the following locations in the anchor text.</p>
+                            </div>
+                            <div>
+                                <textarea class="form-control autogrow" id="field-ta" placeholder="input one location per line"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Exit</button>
+                <button type="button" class="btn btn-info">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- DISAVOWED SETTINGS  -->
+<div class="modal fade" id="health-filter-disavowed-settings">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title"><i class="fa fa-filter"></i>DISAVOWED FILTER SETTINGS</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <h4>Description</h4>
+                        <p>The Disavowed filter allows you to specify backlinks that have been disavowed. If there are specific backlinks that you wish to tag as disavowed you may add them here.</p>
+                    </div>
+                </div>
+                <form>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <div  class="row well well-sm">
+                                <label for="backlinks-keywords-include">
+                                    <span class="h4">List Disavowed Links</span>
+                                </label>
+                                <p>Include a list of disavowed links here.</p>
+                            </div>
+                            <div>
+                                <textarea class="form-control autogrow" id="keywords-list" placeholder="input one backlink per line"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <div  class="row well well-sm">
+                                <label for="backlinks-keywords-include">
+                                    <span class="h4">Upload CSV File</span>
+                                </label>
+                                <p>You may also upload a CSV file containing your list of disavowed links.</p>
+                            </div>
+                            <div>
+                                <div class="col-md-12">
+                                    <input type="file" class="form-control file2 inline btn btn-primary" data-label="<i class='fa fa-file-text-o'></i> Choose A CSV File" />
+                                </div>
                             </div>
                         </div>
                     </div>

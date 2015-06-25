@@ -10,81 +10,6 @@
 	
 	$(document).ready(function()
 	{
-		
-		// Rickshaw Graphs
-		if(typeof Rickshaw != 'undefined')
-		{
-			// Graph 1
-			var graph = new Rickshaw.Graph( {
-					element: document.querySelector("#chart1"),
-					renderer: 'area',
-					stroke: true,
-					height: 120,
-					series: [ {
-							data: [ { x: 0, y: 40 }, { x: 1, y: 49 }, {x: 2, y: 33}, {x: 3, y: 57}, {x: 4, y: 68} ],
-							color: 'steelblue'
-					}, {	
-							data: [ { x: 0, y: 40 }, { x: 1, y: 49 }, {x: 2, y: 6}, {x: 3, y: 13}, {x: 4, y: 19} ],
-							color: 'lightblue'
-					} ]					 
-			} );
-				 
-			graph.render();
-		
-		
-			// Graph 2		
-			var seriesData = [ [], [], [], [], [], [], [], [], [] ];
-			var random = new Rickshaw.Fixtures.RandomData(150);
-			
-			for (var i = 0; i < 100; i++) {
-				random.addData(seriesData);
-			}
-			
-			var palette = new Rickshaw.Color.Palette( { scheme: 'classic9' } );
-			
-			
-			var graph = new Rickshaw.Graph( {
-				element: document.getElementById("chart2"),
-				height: 120,
-				renderer: 'area',
-				stroke: true,
-				preserve: true,
-				series: [
-					{
-						color: palette.color(),
-						data: seriesData[0],
-						name: 'Moscow'
-					}, {
-						color: palette.color(),
-						data: seriesData[1],
-						name: 'Shanghai'
-					}, {
-						color: palette.color(),
-						data: seriesData[2],
-						name: 'Amsterdam'
-					}, {
-						color: palette.color(),
-						data: seriesData[3],
-						name: 'Paris'
-					}, {
-						color: palette.color(),
-						data: seriesData[4],
-						name: 'Tokyo'
-					}, {
-						color: palette.color(),
-						data: seriesData[5],
-						name: 'London'
-					}, {
-						color: palette.color(),
-						data: seriesData[6],
-						name: 'New York'
-					}
-				]
-			} );
-			
-			graph.render();
-		}
-		
 	
 		// Morris.js Graphs
 		if(typeof Morris != 'undefined')
@@ -94,14 +19,16 @@
 				element: 'chart3',
 				axes: true,
 				data: [
-					{x: '2013 Q1', y: getRandomInt(1,10), z: getRandomInt(1,10), a: getRandomInt(1,10)},
-					{x: '2013 Q2', y: getRandomInt(1,10), z: getRandomInt(1,10), a: getRandomInt(1,10)},
-					{x: '2013 Q3', y: getRandomInt(1,10), z: getRandomInt(1,10), a: getRandomInt(1,10)},
-					{x: '2013 Q4', y: getRandomInt(1,10), z: getRandomInt(1,10), a: getRandomInt(1,10)}
+					{x: 'January', y: getRandomInt(1,10), z: getRandomInt(1,10), a: getRandomInt(1,10)},
+					{x: 'February', y: getRandomInt(1,10), z: getRandomInt(1,10), a: getRandomInt(1,10)},
+					{x: 'March', y: getRandomInt(1,10), z: getRandomInt(1,10), a: getRandomInt(1,10)},
+					{x: 'April', y: getRandomInt(1,10), z: getRandomInt(1,10), a: getRandomInt(1,10)},
+					{x: 'May', y: getRandomInt(1,10), z: getRandomInt(1,10), a: getRandomInt(1,10)},
+					{x: 'June', y: getRandomInt(1,10), z: getRandomInt(1,10), a: getRandomInt(1,10)}
 				],
 				xkey: 'x',
 				ykeys: ['y', 'z', 'a'],
-				labels: ['Facebook', 'LinkedIn', 'Google+'],
+				labels: ['Blog', 'Social', 'Video'],
 				barColors: ['#707f9b', '#455064', '#242d3c']
 			});
 			
@@ -109,53 +36,41 @@
 			Morris.Bar({
 				element: 'chart4',
 				data: [
-					{x: '2013 Q1', y: getRandomInt(1,10), z: getRandomInt(1,20), a: getRandomInt(1,20)},
-					{x: '2013 Q2', y: getRandomInt(1,11), z: getRandomInt(1,10), a: getRandomInt(1,14)},
-					{x: '2013 Q3', y: getRandomInt(1,20), z: getRandomInt(1,20), a: getRandomInt(1,19)},
-					{x: '2013 Q4', y: getRandomInt(1,15), z: getRandomInt(1,15), a: getRandomInt(1,11)}
+					{x: 'January', y: getRandomInt(1,10), z: getRandomInt(1,20), a: getRandomInt(1,20)},
+					{x: 'February', y: getRandomInt(1,11), z: getRandomInt(1,10), a: getRandomInt(1,14)},
+					{x: 'March', y: getRandomInt(1,20), z: getRandomInt(1,20), a: getRandomInt(1,19)},
+					{x: 'April', y: getRandomInt(1,15), z: getRandomInt(1,15), a: getRandomInt(1,11)},
+					{x: 'May', y: getRandomInt(1,15), z: getRandomInt(1,15), a: getRandomInt(1,11)},
+					{x: 'June', y: getRandomInt(1,15), z: getRandomInt(1,15), a: getRandomInt(1,11)}
 				],
 				xkey: 'x',
 				ykeys: ['y', 'z', 'a'],
-				labels: ['Facebook', 'LinkedIn', 'Google+'],
+				labels: ['Healthy', 'Suspicious', 'Toxic'],
 				stacked: true,
-				barColors: ['#ffaaab', '#ff6264', '#d13c3e']
-			});
-			
-			// Donut
-			Morris.Donut({
-				element: 'chart5',
-				data: [
-					{label: "Download Sales", value: getRandomInt(10,50)},
-					{label: "In-Store Sales", value: getRandomInt(10,50)},
-					{label: "Mail-Order Sales", value: getRandomInt(10,50)}
-				],
-				colors: ['#707f9b', '#455064', '#242d3c']
+				barColors: ['#00a651', '#f26c4f', '#d13c3e']
 			});
 			
 			// Donut Colors
 			Morris.Donut({
 				element: 'chart6',
 				data: [
-					{label: "Games", value: getRandomInt(10,50)},
-					{label: "Photos", value: getRandomInt(10,50)},
-					{label: "Apps", value: getRandomInt(10,50)},
-					{label: "Other", value: getRandomInt(10,50)},
+					{label: "Do Follow", value: 65},
+					{label: "No Follow", value: 35}
 				],
 				labelColor: '#303641',
-				colors: ['#f26c4f', '#00a651', '#00bff3', '#0072bc']
+				colors: ['#00a651', '#f26c4f']
 			});
 			
 			// Donut Formatting
 			Morris.Donut({
 				element: 'chart7',
 				data: [
-					{value: 70, label: 'foo', formatted: 'at least 70%' },
-					{value: 15, label: 'bar', formatted: 'approx. 15%' },
-					{value: 10, label: 'baz', formatted: 'approx. 10%' },
-					{value: 5, label: 'A really really long label', formatted: 'at most 5%' }
+					{value: 70, label: 'Healthy', formatted: 'at least 70%' },
+					{value: 15, label: 'Suspicious', formatted: 'approx. 15%' },
+					{value: 15, label: 'Toxic', formatted: 'approx. 15%' }
 				],
 				formatter: function (x, data) { return data.formatted; },
-				colors: ['#b92527', '#d13c3e', '#ff6264', '#ffaaab']
+				colors: ['#00a651', '#f26c4f', '#d13c3e']
 			});
 			
 			
@@ -173,18 +88,6 @@
 				{"elapsed": "X", "value": 19}
 			];
 			
-			Morris.Line({
-				element: 'chart8',
-				data: day_data,
-				xkey: 'elapsed',
-				ykeys: ['value'],
-				labels: ['value'],
-				parseTime: false,
-				lineColors: ['#242d3c']
-			});
-			
-			
-			
 			// Goals
 			var decimal_data = [];
 			
@@ -194,35 +97,7 @@
 				y: Math.sin(Math.PI * x / 180).toFixed(4)
 				});
 			}
-			
-			Morris.Line({
-				element: 'chart9',
-				data: decimal_data,
-				xkey: 'x',
-				ykeys: ['y'],
-				labels: ['sin(x)'],
-				parseTime: false,
-				goals: [-1, 0, 1],
-				lineColors: ['#d13c3e']
-			});
-		
-			
-			// Area Chart
-			Morris.Area({
-				element: 'chart10',
-				data: [
-					{ y: '2006', a: getRandomInt(10,100), b: getRandomInt(10,100) },
-					{ y: '2007', a: getRandomInt(10,100),  b: getRandomInt(10,100) },
-					{ y: '2008', a: getRandomInt(10,100),  b: getRandomInt(10,100) },
-					{ y: '2009', a: getRandomInt(10,100),  b: getRandomInt(10,100) },
-					{ y: '2010', a: getRandomInt(10,100),  b: getRandomInt(10,100) },
-					{ y: '2011', a: getRandomInt(10,100),  b: getRandomInt(10,100) },
-					{ y: '2012', a: getRandomInt(10,100), b: getRandomInt(10,100) }
-				],
-				xkey: 'y',
-				ykeys: ['a', 'b'],
-				labels: ['Series A', 'Series B']
-			});
+
 		}
 		
 		

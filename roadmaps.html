@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content=""/>
 
-    <title>RankHacker</title>
+    <title>RankHacker - Roadmaps</title>
     <meta name="description" content="RankHacker Admin Panel"/>
 
     <link rel="stylesheet" href="js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
@@ -64,7 +64,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="roadmaps.html">
                                 <span class="title">fairmarketing.com</span>
                             </a>
                         </li>
@@ -81,7 +81,7 @@
                         <li>
                             <a href="javascript:;" onclick="jQuery('#create-project').modal('show', {backdrop: 'static'});">
                                 <i class="entypo-plus"></i>
-                                <span class="title">add new project</span>
+                                <span class="title">create new project</span>
                             </a>
                         </li>
                     </ul>
@@ -95,6 +95,7 @@
                         <span class="title">Account</span>
                     </a>
                     <ul>
+                        <!--
                         <li>
                             <a href="#">
                                 <i class="entypo-user"></i>
@@ -102,17 +103,18 @@
 
                             </a>
                         </li>
+                        -->
                         <li>
-                            <a href="#">
+                            <a href="account-settings.html">
                                 <i class="entypo-cog"></i>
                                 <span class="title">Account Settings</span>
 
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="billing.html">
                                 <i class="fa fa-usd"></i>
-                                <span class="title">Billing History</span>
+                                <span class="title">Order History</span>
                             </a>
                         </li>
                     </ul>
@@ -137,628 +139,1248 @@
 
 
     <div id="roadmap-list" class="main-content container-fluid">
+
         <div class="row">
-            <div class="col-sm-12 text-left">
-                <h1><i class="entypo-map"></i>Roadmaps</h1>
-                <h4>Project: <span class="project-name">fairmarketing.com</span></h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 text-left">
-                <div class="daterange daterange-inline add-ranges active" data-format="MMMM D, YYYY" data-start-date="June 3, 2015" data-end-date="June 20, 2015"> <i class="entypo-calendar"></i> <span>June 3, 2015 - June 20, 2015</span> </div>
-            </div>
-            <div class="col-sm-9 text-right">
-                <a href="javascript:;" onclick="jQuery('#create-roadmap').modal('show', {backdrop: 'static'});">
-                    <button type="button" class="btn btn-default btn-lg btn-icon btn-info">
-                        Create Roadmap
-                        <i class="entypo-plus"></i>
-                    </button>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <form role="form" class="form-horizontal form-groups-bordered">
+            <div class="col-md-10 col-md-push-1 data-container">
 
-                <ul class="col-sm-12 form-group">
-                    <li class="roadmap">
-
-                        <div class="panel no-border" data-collapsed="0">
-
-                            <div class="panel-heading no-padding no-radius">
-                                <div class="panel-select short">
-
-                                    <div class="checkbox checkbox-replace neon-cb-replacement checked">
-                                        <label class="cb-wrapper">
-                                            <input type="checkbox" id="chk-1" checked="">
-                                            <div class="checked"></div>
-                                        </label>
-                                    </div>
-
-                                </div>
-
-                                <div class="panel-title short">
-                                    <div class="title">Name</div>
-                                    <h2>houston plumbing specialist</h2>
-                                </div>
-
-                                <div class="panel-options short">
-
-                                    <div class="title"><br /></div>
-
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default">Actions</button>
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> </button>
-                                        <ul class="dropdown-menu dropdown-danger" role="menu">
-                                            <li><a href="javascript:;" onclick="jQuery('#refresh-roadmap').modal('show', {backdrop: 'static'});"><i class="entypo-arrows-ccw"></i>Refresh</a> </li>
-                                            <li><a href="roadmap-settings.html"><i class="entypo-pencil"></i>Edit</a> </li>
-                                            <li><a href="javascript:;" onclick="jQuery('#delete-roadmap').modal('show', {backdrop: 'static'});"><i class="entypo-trash"></i>Delete</a> </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default">View</button>
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> </button>
-                                        <ul class="dropdown-menu dropdown-danger" role="menu">
-                                            <li><a href="javascript:;" onclick="jQuery('#content-profile').modal('show', {backdrop: 'static'});"><i class="entypo-chart-bar"></i>Content Profile</a> </li>
-                                            <li><a href="javascript:;" onclick="jQuery('#roadmap-calendar').modal('show', {backdrop: 'static'});"><i class="entypo-calendar"></i>Roadmap Calendar</a> </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default">Export</button>
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <i class="entypo-export"></i> </button>
-                                        <ul class="dropdown-menu dropdown-danger" role="menu">
-                                            <li><a href="javascript:;" onclick="jQuery('#download-report').modal('show', {backdrop: 'static'});"><i class="entypo-download"></i>Download Report</a> </li>
-                                            <li><a href="javascript:;" onclick="jQuery('#export-editorial-calendar').modal('show', {backdrop: 'static'});"><i class="entypo-calendar"></i>Editorial Calendar</a> </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                                <div class="panel-data">
-                                    <ul class="nav nav-tabs" role="tablist" id="content-tabs">
-
-                                        <li role="presentation">
-                                            <a href="#all-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">All Content</div>
-                                                    <span class="num" data-start="12" data-end="23" data-duration="1500" data-delay="0">67</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#blog-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Blog</div>
-                                                    <span class="num" data-start="5" data-end="10" data-duration="1500" data-delay="0">13</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#news-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">News</div>
-                                                    <span class="num" data-start="5" data-end="10" data-duration="1500" data-delay="0">11</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#social-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Social</div>
-                                                    <span class="num" data-start="9" data-end="18" data-duration="1500" data-delay="0">18</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#press-release-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Press Release</div>
-                                                    <span class="num" data-start="6" data-end="12" data-duration="1500" data-delay="0">12</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#directory-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Directory</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">4</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#video-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Video</div>
-                                                    <span class="num" data-start="1" data-end="2" data-duration="1500" data-delay="0">5</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#image-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Images</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">8</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#forum-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Forum</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">15</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#wiki-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Wiki</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">2</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#product-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Product</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">3</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#article-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Article</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">12</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </div>
+                <div class="row">
+                    <div class="col-md-12 text-left">
+                        <div class="row">
+                            <div class="col-md-12">
 
                             </div>
-
-                            <div class="panel-body no-gutters">
-
-                                <!-- Start Blog Post 1 Data -->
-
-                                <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane" id="all-content">
-                                        <table class="table table-responsive table-bordered">
-                                            <thead>
-                                            <tr>
-                                                <th class="text-center">#</th>
-                                                <th class="text-center">ORDER</th>
-                                                <th class="text-center">DOMAIN AUTHORITY</th>
-                                                <th class="text-center">OUTREACH SOURCES</th>
-                                                <th class="text-center">ANCHOR TYPES</th>
-                                                <th class="text-center">BACKLINKS</th>
-                                                <th class="text-center">PUBLISHED</th>
-                                                <th>NOTES</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="text-center">
-                                                    <td>1</td>
-                                                    <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
-                                                    <td>55</td>
-                                                    <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
-                                                        <ul class="anchor-type-list text-left">
-                                                            <li><span>1</span> branded</li>
-                                                            <li><span>2</span> url</li>
-                                                        </ul>
-
-                                                    </td>
-                                                    <td>4</td>
-                                                    <td>
-                                                        <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
-                                                            <input type="checkbox" checked>
-                                                        </div>
-                                                    </td>
-                                                    <td class="table-wide table-notes text-left">Aenean posuere hendrerit ex, sed varius mi laoreet quis. Nam eu nulla odio. Pellentesque condimentum volutpat suscipit. Quisque at cursus est. Duis in varius sapien, sed lobortis ipsum</td>
-
-                                                </tr>
-
-                                                <tr class="text-center">
-                                                    <td>2</td>
-                                                    <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
-                                                    <td>61</td>
-                                                    <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
-                                                        <ul class="anchor-type-list text-left">
-                                                            <li><span>1</span> branded</li>
-                                                            <li><span>2</span> url</li>
-                                                        </ul>
-
-                                                    </td>
-                                                    <td>2</td>
-                                                    <td>
-                                                        <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
-                                                            <input type="checkbox" checked>
-                                                        </div>
-                                                    </td>
-                                                    <td class="table-wide table-notes text-left">This is a note.</td>
-
-                                                </tr>
-
-                                                <tr class="text-center">
-                                                    <td>3</td>
-                                                    <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
-                                                    <td>62</td>
-                                                    <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>33</td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
-                                                        <ul class="anchor-type-list text-left">
-                                                            <li><span>1</span> branded</li>
-                                                            <li><span>2</span> url</li>
-                                                        </ul>
-
-                                                    </td>
-                                                    <td>3</td>
-                                                    <td>
-                                                        <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
-                                                            <input type="checkbox" checked>
-                                                        </div>
-                                                    </td>
-                                                    <td class="table-wide table-notes text-left">Nullam egestas gravida ligula, tempor tincidunt nunc fringilla sit amet. Sed maximus sagittis quam, id porttitor neque condimentum quis</td>
-
-                                                </tr>
-
-                                                <tr class="text-center">
-                                                    <td>4</td>
-                                                    <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
-                                                    <td>55</td>
-                                                    <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>27</td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
-                                                        <ul class="anchor-type-list text-left">
-                                                            <li><span>1</span> branded</li>
-                                                            <li><span>2</span> url</li>
-                                                        </ul>
-
-                                                    </td>
-                                                    <td>4</td>
-                                                    <td>
-                                                        <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
-                                                            <input type="checkbox">
-                                                        </div>
-                                                    </td>
-                                                    <td class="table-wide table-notes text-left"></td>
-
-                                                </tr>
-
-                                                <tr class="text-center">
-                                                    <td>5</td>
-                                                    <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
-                                                    <td>61</td>
-                                                    <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
-                                                        <ul class="anchor-type-list text-left">
-                                                            <li><span>1</span> branded</li>
-                                                            <li><span>2</span> url</li>
-                                                        </ul>
-
-                                                    </td>
-                                                    <td>2</td>
-                                                    <td>
-                                                        <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
-                                                            <input type="checkbox">
-                                                        </div>
-                                                    </td>
-                                                    <td class="table-wide table-notes text-left"></td>
-
-                                                </tr>
-
-                                                <tr class="text-center">
-                                                    <td>6</td>
-                                                    <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
-                                                    <td>62</td>
-                                                    <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>21</td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
-                                                        <ul class="anchor-type-list text-left">
-                                                            <li><span>1</span> branded</li>
-                                                            <li><span>2</span> url</li>
-                                                        </ul>
-
-                                                    </td>
-                                                    <td>3</td>
-                                                    <td>
-                                                        <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
-                                                            <input type="checkbox" checked>
-                                                        </div>
-                                                    </td>
-                                                    <td class="table-wide table-notes text-left">Proin eu eros eget enim imperdiet vehicula. Duis fringilla rutrum convallis. Nunc id rhoncus eros. Aenean facilisis vehicula massa ac auctor. Donec sodales varius ex id blandit. </td>
-
-                                                </tr
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                    <div role="tabpanel" class="tab-pane" id="blog-content">
-
-                                    </div>
-
-                                    <div role="tabpanel" class="tab-pane" id="news-content">
-
-                                    </div>
-
-                                    <div role="tabpanel" class="tab-pane" id="social-content">
-
-                                    </div>
-
-                                    <div role="tabpanel" class="tab-pane" id="press-release-content">
-
-                                    </div>
-
-                                    <div role="tabpanel" class="tab-pane" id="directory-content">
-
-                                    </div>
-
-                                    <div role="tabpanel" class="tab-pane" id="video-content">
-
-                                    </div>
-
-                                    <div role="tabpanel" class="tab-pane" id="image-content">
-
-                                    </div>
-
-                                    <div role="tabpanel" class="tab-pane" id="forum-content">
-
-                                    </div>
-
-                                    <div role="tabpanel" class="tab-pane" id="wiki-content">
-
-                                    </div>
-
-                                    <div role="tabpanel" class="tab-pane" id="product-content">
-
-                                    </div>
-
-                                    <div role="tabpanel" class="tab-pane" id="article-content">
-
-                                    </div>
-
-                                </div>
-
-                                <!-- End Blog Post 1 Data -->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="modal-title"><i class="entypo-map"></i>ROADMAPS</h3>
                             </div>
+                        </div>
+                        <div class="row well well-sm">
+                            <h4><i class="entypo-folder"></i>Project: <a href="#" class="project-name">fairmarketing.com</a></h4>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="inline-list months-list">
+                                    <li><a href="#" class="label label-info">Jan</a></li>
+                                    <li><a href="#" class="label label-info">Feb</a></li>
+                                    <li><a href="#" class="label label-info">Mar</a></li>
+                                    <li><a href="#" class="label label-info">Apr</a></li>
+                                    <li><a href="#" class="label label-info">May</a></li>
+                                    <li><a href="#" class="label label-info">Jun</a></li>
+                                    <li><a href="#" class="label label-success">Jul</a></li>
+                                    <li><a href="#" class="label label-info">Aug</a></li>
+                                    <li><a href="#" class="label label-info">Sep</a></li>
+                                    <li><a href="#" class="label label-info">Oct</a></li>
+                                    <li><a href="#" class="label label-info">Nov</a></li>
+                                    <li><a href="#" class="label label-info">Dec</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <a href="javascript:;" onclick="jQuery('#create-roadmap').modal('show', {backdrop: 'static'});">
+                                    <button type="button" class="btn btn-default btn-lg btn-icon btn-info">
+                                        Create Roadmap
+                                        <i class="entypo-plus"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <form role="form" class="form-horizontal form-groups-bordered col-md-12">
+
+                                <ul class="form-group">
+
+                                    <li id="roadmap-1" class="roadmap">
+
+                                        <div class="panel no-border" data-collapsed="0">
+
+                                            <div class="panel-heading no-padding no-radius">
+                                                <div class="panel-select short col-md-1">
+
+                                                    <div class="checkbox checkbox-replace neon-cb-replacement checked text-center">
+                                                        <label class="cb-wrapper">
+                                                            <input type="checkbox" id="chk-1" checked="">
+                                                            <div class="checked"></div>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="panel-title short col-md-9">
+                                                    <ul class="nav nav-tabs inline-list reveal-data">
+                                                        <li> Name:
+                                                            <h3>houston plumbing specialist</h3>
+                                                        </li>
+                                                        <li>Merged:
+                                                            <ul class="inline-list">
+                                                                <li><span class="badge">houston plumbing</span></li>
+                                                                <li><span class="badge">plumbing specialist</span></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Agressiveness:
+                                                            <ul class="inline-list">
+                                                                <li><span class="badge">Match</span></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Content:
+                                                            <ul class="inline-list">
+                                                                <li><a href="#content-nav-1" data-toggle="collapse" data-parent="#roadmap-1" class="collapsed"><span class="badge badge-info tooltip-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">63</span></a></li>
+
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="panel-options short col-md-2">
+                                                    <ul class="inline-list text-center">
+                                                        <li><a href="javascript:;" onclick="jQuery('#refresh-roadmap').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Refresh"><i class="entypo-arrows-ccw"></i></a> </li>
+                                                        <li><a href="roadmap-settings.html" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Edit"><i class="entypo-pencil"></i></a> </li>
+                                                        <li><a href="javascript:;" onclick="jQuery('#delete-roadmap').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Delete"><i class="entypo-trash"></i></a> </li>
+                                                        <li><a href="content-profile.html" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="View Content Profile"><i class="entypo-chart-bar"></i></a> </li>
+                                                        <li><a href="javascript:;" onclick="jQuery('#download-report').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Download Report"><i class="entypo-download"></i></a> </li>
+                                                        <li><a href="javascript:;" onclick="jQuery('#export-editorial-calendar').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Export Editorial Calendar"><i class="entypo-calendar"></i></a> </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div id="content-nav-1" class="col-md-12 panel-data panel-collapse collapse">
+
+                                                    <ul class="nav nav-tabs content-nav">
+
+                                                        <li>
+                                                            <a href="#all-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">All Content</div>
+                                                                    <span class="num" data-start="12" data-end="23" data-duration="1500" data-delay="0">67</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#blog-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Blog</div>
+                                                                    <span class="num" data-start="5" data-end="10" data-duration="1500" data-delay="0">13</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#news-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">News</div>
+                                                                    <span class="num" data-start="5" data-end="10" data-duration="1500" data-delay="0">11</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#social-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Social</div>
+                                                                    <span class="num" data-start="9" data-end="18" data-duration="1500" data-delay="0">18</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#press-release-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Press Release</div>
+                                                                    <span class="num" data-start="6" data-end="12" data-duration="1500" data-delay="0">12</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#directory-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Directory</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">4</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#video-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Video</div>
+                                                                    <span class="num" data-start="1" data-end="2" data-duration="1500" data-delay="0">5</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#image-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Images</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">8</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#forum-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Forum</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">15</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#wiki-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Wiki</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">2</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#product-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Product</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">3</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#article-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Article</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">12</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="panel-body no-gutters">
+
+                                                <!-- Start Blog Post 1 Data -->
+
+                                                <div class="tab-content">
+                                                    <div role="tabpanel" class="tab-pane" id="all-content">
+                                                        <table class="table table-responsive table-bordered">
+                                                            <thead>
+                                                            <tr>
+                                                                <th class="text-center">#</th>
+                                                                <th class="text-center">ORDER</th>
+                                                                <th class="text-center">DOMAIN AUTHORITY</th>
+                                                                <th class="text-center">OUTREACH SOURCES</th>
+                                                                <th class="text-center">ANCHOR TYPES</th>
+                                                                <th class="text-center">BACKLINKS</th>
+                                                                <th class="text-center">PUBLISHED</th>
+                                                                <th>NOTES</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr class="text-center">
+                                                                <td>1</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>55</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">Aenean posuere hendrerit ex, sed varius mi laoreet quis. Nam eu nulla odio. Pellentesque condimentum volutpat suscipit. Quisque at cursus est. Duis in varius sapien, sed lobortis ipsum</td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>2</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>61</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">This is a note.</td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>3</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>62</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>33</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">Nullam egestas gravida ligula, tempor tincidunt nunc fringilla sit amet. Sed maximus sagittis quam, id porttitor neque condimentum quis</td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>4</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>55</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>27</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left"></td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>5</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>61</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left"></td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>6</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>62</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>21</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">Proin eu eros eget enim imperdiet vehicula. Duis fringilla rutrum convallis. Nunc id rhoncus eros. Aenean facilisis vehicula massa ac auctor. Donec sodales varius ex id blandit. </td>
+
+                                                            </tr
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="blog-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="news-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="social-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="press-release-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="directory-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="video-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="image-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="forum-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="wiki-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="product-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="article-content">
+
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- End Blog Post 1 Data -->
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li id="roadmap-2" class="roadmap">
+
+                                        <div class="panel no-border" data-collapsed="0">
+
+                                            <div class="panel-heading no-padding no-radius">
+                                                <div class="panel-select short col-md-1">
+
+                                                    <div class="checkbox checkbox-replace neon-cb-replacement checked text-center">
+                                                        <label class="cb-wrapper">
+                                                            <input type="checkbox" id="chk-1" checked="">
+                                                            <div class="checked"></div>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="panel-title short col-md-9">
+                                                    <ul class="nav nav-tabs inline-list reveal-data">
+                                                        <li> Name:
+                                                            <h3>houston plumbing specialist</h3>
+                                                        </li>
+                                                        <li>Merged:
+                                                            <ul class="inline-list">
+                                                                <li><span class="badge">houston plumbing</span></li>
+                                                                <li><span class="badge">plumbing specialist</span></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Agressiveness:
+                                                            <ul class="inline-list">
+                                                                <li><span class="badge">Match</span></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Content:
+                                                            <ul class="inline-list">
+                                                                <li><a href="#content-nav-2" data-toggle="collapse" data-parent="#roadmap-2" class="collapsed"><span class="badge badge-info tooltip-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">63</span></a></li>
+
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="panel-options short col-md-2">
+                                                    <ul class="inline-list text-center">
+                                                        <li><a href="javascript:;" onclick="jQuery('#refresh-roadmap').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Refresh"><i class="entypo-arrows-ccw"></i></a> </li>
+                                                        <li><a href="roadmap-settings.html" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Edit"><i class="entypo-pencil"></i></a> </li>
+                                                        <li><a href="javascript:;" onclick="jQuery('#delete-roadmap').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Delete"><i class="entypo-trash"></i></a> </li>
+                                                        <li><a href="content-profile.html" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="View Content Profile"><i class="entypo-chart-bar"></i></a> </li>
+                                                        <li><a href="javascript:;" onclick="jQuery('#download-report').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Download Report"><i class="entypo-download"></i></a> </li>
+                                                        <li><a href="javascript:;" onclick="jQuery('#export-editorial-calendar').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Export Editorial Calendar"><i class="entypo-calendar"></i></a> </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div id="content-nav-2" class="col-md-12 panel-data panel-collapse collapse">
+
+                                                    <ul class="nav nav-tabs content-nav">
+
+                                                        <li>
+                                                            <a href="#all-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">All Content</div>
+                                                                    <span class="num" data-start="12" data-end="23" data-duration="1500" data-delay="0">67</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#blog-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Blog</div>
+                                                                    <span class="num" data-start="5" data-end="10" data-duration="1500" data-delay="0">13</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#news-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">News</div>
+                                                                    <span class="num" data-start="5" data-end="10" data-duration="1500" data-delay="0">11</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#social-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Social</div>
+                                                                    <span class="num" data-start="9" data-end="18" data-duration="1500" data-delay="0">18</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#press-release-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Press Release</div>
+                                                                    <span class="num" data-start="6" data-end="12" data-duration="1500" data-delay="0">12</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#directory-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Directory</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">4</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#video-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Video</div>
+                                                                    <span class="num" data-start="1" data-end="2" data-duration="1500" data-delay="0">5</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#image-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Images</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">8</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#forum-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Forum</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">15</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#wiki-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Wiki</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">2</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#product-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Product</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">3</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#article-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Article</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">12</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="panel-body no-gutters">
+
+                                                <!-- Start Blog Post 1 Data -->
+
+                                                <div class="tab-content">
+                                                    <div role="tabpanel" class="tab-pane" id="all-content">
+                                                        <table class="table table-responsive table-bordered">
+                                                            <thead>
+                                                            <tr>
+                                                                <th class="text-center">#</th>
+                                                                <th class="text-center">ORDER</th>
+                                                                <th class="text-center">DOMAIN AUTHORITY</th>
+                                                                <th class="text-center">OUTREACH SOURCES</th>
+                                                                <th class="text-center">ANCHOR TYPES</th>
+                                                                <th class="text-center">BACKLINKS</th>
+                                                                <th class="text-center">PUBLISHED</th>
+                                                                <th>NOTES</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr class="text-center">
+                                                                <td>1</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>55</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">Aenean posuere hendrerit ex, sed varius mi laoreet quis. Nam eu nulla odio. Pellentesque condimentum volutpat suscipit. Quisque at cursus est. Duis in varius sapien, sed lobortis ipsum</td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>2</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>61</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">This is a note.</td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>3</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>62</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>33</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">Nullam egestas gravida ligula, tempor tincidunt nunc fringilla sit amet. Sed maximus sagittis quam, id porttitor neque condimentum quis</td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>4</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>55</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>27</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left"></td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>5</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>61</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left"></td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>6</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>62</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>21</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">Proin eu eros eget enim imperdiet vehicula. Duis fringilla rutrum convallis. Nunc id rhoncus eros. Aenean facilisis vehicula massa ac auctor. Donec sodales varius ex id blandit. </td>
+
+                                                            </tr
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="blog-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="news-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="social-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="press-release-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="directory-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="video-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="image-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="forum-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="wiki-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="product-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="article-content">
+
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- End Blog Post 1 Data -->
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li id="roadmap-3" class="roadmap">
+
+                                        <div class="panel no-border" data-collapsed="0">
+
+                                            <div class="panel-heading no-padding no-radius">
+                                                <div class="panel-select short col-md-1">
+
+                                                    <div class="checkbox checkbox-replace neon-cb-replacement checked text-center">
+                                                        <label class="cb-wrapper">
+                                                            <input type="checkbox" id="chk-1" checked="">
+                                                            <div class="checked"></div>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="panel-title short col-md-9">
+                                                    <ul class="nav nav-tabs inline-list reveal-data">
+                                                        <li> Name:
+                                                            <h3>houston plumbing specialist</h3>
+                                                        </li>
+                                                        <li>Merged:
+                                                            <ul class="inline-list">
+                                                                <li><span class="badge">houston plumbing</span></li>
+                                                                <li><span class="badge">plumbing specialist</span></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Agressiveness:
+                                                            <ul class="inline-list">
+                                                                <li><span class="badge">Match</span></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Content:
+                                                            <ul class="inline-list">
+                                                                <li><a href="#content-nav-3" data-toggle="collapse" data-parent="#roadmap-3" class="collapsed"><span class="badge badge-info tooltip-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">63</span></a></li>
+
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="panel-options short col-md-2">
+                                                    <ul class="inline-list text-center">
+                                                        <li><a href="javascript:;" onclick="jQuery('#refresh-roadmap').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Refresh"><i class="entypo-arrows-ccw"></i></a> </li>
+                                                        <li><a href="roadmap-settings.html" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Edit"><i class="entypo-pencil"></i></a> </li>
+                                                        <li><a href="javascript:;" onclick="jQuery('#delete-roadmap').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Delete"><i class="entypo-trash"></i></a> </li>
+                                                        <li><a href="content-profile.html" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="View Content Profile"><i class="entypo-chart-bar"></i></a> </li>
+                                                        <li><a href="javascript:;" onclick="jQuery('#download-report').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Download Report"><i class="entypo-download"></i></a> </li>
+                                                        <li><a href="javascript:;" onclick="jQuery('#export-editorial-calendar').modal('show', {backdrop: 'static'});" class="tooltip-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Export Editorial Calendar"><i class="entypo-calendar"></i></a> </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div id="content-nav-3" class="col-md-12 panel-data panel-collapse collapse">
+
+                                                    <ul class="nav nav-tabs content-nav">
+
+                                                        <li>
+                                                            <a href="#all-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">All Content</div>
+                                                                    <span class="num" data-start="12" data-end="23" data-duration="1500" data-delay="0">67</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#blog-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Blog</div>
+                                                                    <span class="num" data-start="5" data-end="10" data-duration="1500" data-delay="0">13</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#news-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">News</div>
+                                                                    <span class="num" data-start="5" data-end="10" data-duration="1500" data-delay="0">11</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#social-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Social</div>
+                                                                    <span class="num" data-start="9" data-end="18" data-duration="1500" data-delay="0">18</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#press-release-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Press Release</div>
+                                                                    <span class="num" data-start="6" data-end="12" data-duration="1500" data-delay="0">12</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#directory-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Directory</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">4</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#video-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Video</div>
+                                                                    <span class="num" data-start="1" data-end="2" data-duration="1500" data-delay="0">5</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#image-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Images</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">8</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#forum-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Forum</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">15</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#wiki-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Wiki</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">2</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#product-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Product</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">3</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#article-content" data-toggle="tab">
+                                                                <div class="short tile-data text-center">
+                                                                    <div class="title">Article</div>
+                                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">12</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="panel-body no-gutters">
+
+                                                <!-- Start Blog Post 1 Data -->
+
+                                                <div class="tab-content">
+                                                    <div role="tabpanel" class="tab-pane" id="all-content">
+                                                        <table class="table table-responsive table-bordered">
+                                                            <thead>
+                                                            <tr>
+                                                                <th class="text-center">#</th>
+                                                                <th class="text-center">ORDER</th>
+                                                                <th class="text-center">DOMAIN AUTHORITY</th>
+                                                                <th class="text-center">OUTREACH SOURCES</th>
+                                                                <th class="text-center">ANCHOR TYPES</th>
+                                                                <th class="text-center">BACKLINKS</th>
+                                                                <th class="text-center">PUBLISHED</th>
+                                                                <th>NOTES</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr class="text-center">
+                                                                <td>1</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>55</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">Aenean posuere hendrerit ex, sed varius mi laoreet quis. Nam eu nulla odio. Pellentesque condimentum volutpat suscipit. Quisque at cursus est. Duis in varius sapien, sed lobortis ipsum</td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>2</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>61</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">This is a note.</td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>3</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>62</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>33</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">Nullam egestas gravida ligula, tempor tincidunt nunc fringilla sit amet. Sed maximus sagittis quam, id porttitor neque condimentum quis</td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>4</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>55</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>27</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left"></td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>5</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>61</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>22</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left"></td>
+
+                                                            </tr>
+
+                                                            <tr class="text-center">
+                                                                <td>6</td>
+                                                                <td><a href=""><i class="fa fa-shopping-cart"></i></a></td>
+                                                                <td>62</td>
+                                                                <td><a href="javascript:;" onclick="jQuery('#outreach-sources').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>21</td>
+                                                                <td>
+                                                                    <a href="javascript:;" onclick="jQuery('#anchor-examples').modal('show', {backdrop: 'static'});" class="table-view text-right"><i class="fa fa-search"></i></a>
+                                                                    <ul class="anchor-type-list text-left">
+                                                                        <li><span>1</span> branded</li>
+                                                                        <li><span>2</span> url</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>
+                                                                    <div class="make-switch switch-small" data-on="success" data-off="danger" data-on-label="Yes" data-off-label="No">
+                                                                        <input type="checkbox" checked>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-wide table-notes text-left">Proin eu eros eget enim imperdiet vehicula. Duis fringilla rutrum convallis. Nunc id rhoncus eros. Aenean facilisis vehicula massa ac auctor. Donec sodales varius ex id blandit. </td>
+
+                                                            </tr
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="blog-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="news-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="social-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="press-release-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="directory-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="video-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="image-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="forum-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="wiki-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="product-content">
+
+                                                    </div>
+
+                                                    <div role="tabpanel" class="tab-pane" id="article-content">
+
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- End Blog Post 1 Data -->
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+                            </form>
                         </div>
 
-                    </li>
-
-                    <li class="roadmap">
-
-                        <div class="panel no-border" data-collapsed="0">
-
-                            <div class="panel-heading no-padding no-radius">
-                                <div class="panel-select short">
-
-                                    <div class="checkbox checkbox-replace neon-cb-replacement">
-                                        <label class="cb-wrapper">
-                                            <input type="checkbox" id="chk-2">
-                                            <div class="checked"></div>
-                                        </label>
-                                    </div>
-
-                                </div>
-
-                                <div class="panel-title short">
-                                    <div class="title">Name</div>
-                                    <h2>houston plumbers</h2>
-                                </div>
-
-                                <div class="panel-options short">
-
-                                    <div class="title"><br /></div>
-
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default">Actions</button>
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> </button>
-                                        <ul class="dropdown-menu dropdown-danger" role="menu">
-                                            <li><a href="javascript:;" onclick="jQuery('#refresh-roadmap').modal('show', {backdrop: 'static'});"><i class="entypo-arrows-ccw"></i>Refresh</a> </li>
-                                            <li><a href="roadmap-settings.html"><i class="entypo-pencil"></i>Edit</a> </li>
-                                            <li><a href="javascript:;" onclick="jQuery('#delete-roadmap').modal('show', {backdrop: 'static'});"><i class="entypo-trash"></i>Delete</a> </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default">View</button>
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> </button>
-                                        <ul class="dropdown-menu dropdown-danger" role="menu">
-                                            <li><a href="javascript:;" onclick="jQuery('#content-profile').modal('show', {backdrop: 'static'});"><i class="entypo-chart-bar"></i>Content Profile</a> </li>
-                                            <li><a href="javascript:;" onclick="jQuery('#roadmap-calendar').modal('show', {backdrop: 'static'});"><i class="entypo-calendar"></i>Roadmap Calendar</a> </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default">Export</button>
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <i class="entypo-export"></i> </button>
-                                        <ul class="dropdown-menu dropdown-danger" role="menu">
-                                            <li><a href="javascript:;" onclick="jQuery('#download-report').modal('show', {backdrop: 'static'});"><i class="entypo-download"></i>Download Report</a> </li>
-                                            <li><a href="javascript:;" onclick="jQuery('#export-editorial-calendar').modal('show', {backdrop: 'static'});"><i class="entypo-calendar"></i>Editorial Calendar</a> </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                                <div class="panel-data">
-                                    <ul class="nav nav-tabs" role="tablist" id="content-tabs">
-
-                                        <li role="presentation">
-                                            <a href="#content-pieces" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">All Content</div>
-                                                    <span class="num" data-start="12" data-end="23" data-duration="1500" data-delay="0">67</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#blog-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Blog</div>
-                                                    <span class="num" data-start="5" data-end="10" data-duration="1500" data-delay="0">13</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#news-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">News</div>
-                                                    <span class="num" data-start="5" data-end="10" data-duration="1500" data-delay="0">11</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#social-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Social</div>
-                                                    <span class="num" data-start="9" data-end="18" data-duration="1500" data-delay="0">18</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#press-release-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Press Release</div>
-                                                    <span class="num" data-start="6" data-end="12" data-duration="1500" data-delay="0">12</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#directory-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Directory</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">4</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#video-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Video</div>
-                                                    <span class="num" data-start="1" data-end="2" data-duration="1500" data-delay="0">5</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#image-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Images</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">8</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#forum-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Forum</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">15</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#wiki-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Wiki</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">2</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#product-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Product</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">3</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li role="presentation">
-                                            <a href="#article-content" role="tab" data-toggle="tab">
-                                                <div class="short tile-data text-center">
-                                                    <div class="title">Article</div>
-                                                    <span class="num" data-start="0" data-end="1" data-duration="1500" data-delay="0">12</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
+                        <!-- Roadmaps Option Menu -->
+                        <div class="row">
+                            <div class="col-sm-12 text-left">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default btn-lg">Actions</button>
+                                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> </button>
+                                    <ul class="dropdown-menu dropdown-danger" role="menu">
+                                        <li><a href="javascript:;" onclick="jQuery('#refresh-roadmaps').modal('show', {backdrop: 'static'});"><i class="entypo-arrows-ccw"></i>Refresh</a> </li>
+                                        <li><a href="javascript:;" onclick="jQuery('#merge-roadmaps').modal('show', {backdrop: 'static'});"><i class="entypo-share"></i>Merge</a> </li>
+                                        <li><a href="javascript:;" onclick="jQuery('#delete-roadmaps').modal('show', {backdrop: 'static'});"><i class="entypo-trash"></i>Delete</a> </li>
                                     </ul>
                                 </div>
-
                             </div>
-
-                            <div class="panel-body no-gutters">
-
-                                <!-- Start Blog Post 1 Data -->
-
-                                <div class="tab-content">
-
-
-                                </div>
-
-
-                            </div>
-
                         </div>
 
-                    </li>
-
-                </ul>
-            </form>
-        </div>
-
-        <!-- Roadmaps Option Menu -->
-        <div class="row">
-            <div class="col-sm-12 text-left">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default btn-lg">Actions</button>
-                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> </button>
-                    <ul class="dropdown-menu dropdown-danger" role="menu">
-                        <li><a href="javascript:;" onclick="jQuery('#refresh-roadmaps').modal('show', {backdrop: 'static'});"><i class="entypo-arrows-ccw"></i>Refresh</a> </li>
-                        <li><a href="javascript:;" onclick="jQuery('#merge-roadmaps').modal('show', {backdrop: 'static'});"><i class="entypo-share"></i>Merge</a> </li>
-                        <li><a href="javascript:;" onclick="jQuery('#delete-roadmaps').modal('show', {backdrop: 'static'});"><i class="entypo-trash"></i>Delete</a> </li>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- FOOTER -->
-        <footer class="main">
-            &copy; 2015 <strong>RankHacker</strong>
-        </footer>
-
     </div>
-
 </div>
+<!-- FOOTER -->
+<footer class="main">
+    &copy; 2015 <strong>RankHacker</strong>
+</footer>
+
+<!-- MODALS -->
 
 <!-- CREATE PROJECT -->
 <div class="modal fade" id="create-project">
@@ -767,7 +1389,7 @@
 
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="modal-title"><i class="entypo-folder"></i>CREATE POJECT</h3>
+                <h3 class="modal-title"><i class="entypo-folder"></i>CREATE NEW PROJECT</h3>
             </div>
 
             <div class="modal-body">
@@ -778,7 +1400,7 @@
                         <div class="form-group">
                             <label for="field-project-domain" class="control-label">Project Domain</label>
 
-                            <input type="text" class="form-control" id="field-project-domain" placeholder="Enter domain URL for project">
+                            <input type="text" class="form-control" id="field-project-domain" placeholder="Enter the domain URL for the new project">
                         </div>
 
                     </div>
@@ -1350,6 +1972,7 @@
 
                             <div class="col-sm-5">
                                 <select class="form-control">
+                                    <option>Zery's</option>
                                     <option>Marketing AI</option>
                                     <option>Kapost</option>
                                     <option>NewsCred</option>
@@ -1375,7 +1998,6 @@
 </div>
 
 <!-- PAGE STYLES -->
-<link rel="stylesheet" href="js/datatables/responsive/css/datatables.responsive.css">
 <link rel="stylesheet" href="js/jquery-ui/css/jquery-ui.min.css">
 <link rel="stylesheet" href="js/vertical-timeline/css/component.css">
 <link rel="stylesheet" href="js/select2/select2-bootstrap.css">
@@ -1398,15 +2020,9 @@
 <script src="js/resizeable.js"></script>
 <script src="js/neon-api.js"></script>
 <script src="js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="js/jquery.dataTables.min.js"></script>
-<script src="js/datatables/TableTools.min.js"></script>
 <!-- FOOTER SCRIPTS (common) -->
 
 <!-- FOOTER SCRIPTS (page) -->
-<script src="js/dataTables.bootstrap.js"></script>
-<script src="js/datatables/jquery.dataTables.columnFilter.js"></script>
-<script src="js/datatables/lodash.min.js"></script>
-<script src="js/datatables/responsive/js/datatables.responsive.js"></script>
 <script src="js/select2/select2.min.js"></script>
 <script src="js/jquery-ui-slider-pips.js"></script>
 <script src="js/bootstrap-tagsinput.min.js"></script>

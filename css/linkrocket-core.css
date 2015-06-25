@@ -9349,6 +9349,20 @@ PANELS
 .panel-heading > .panel-options > .nav-tabs > .tile-stats.tall {
   /* min-height: 140px; */
 }
+#roadmap-list .panel-options ul {
+  margin-top: 12px;
+}
+#roadmap-list .panel-options ul li {
+  border-right: none;
+  margin-right: 3px;
+}
+.panel-heading > .panel-options  i {
+  font-size: 2.25em;
+}
+
+#roadmaps .months-list li {
+  margin-right: 3px;
+}
 /*****************************
 DATA TILES
 *****************************/
@@ -9373,6 +9387,11 @@ DATA TILES
 /*****************************
 ROADMAPS
 *****************************/
+#roadmaps .label[href]:hover,
+#roadmaps .label[href]:focus {
+  color: #fff;
+}
+
 #roadmaps .calendar-env .calendar-body {
   width: 100%;
 }
@@ -9383,7 +9402,8 @@ ROADMAPS
   font-size: .8em;
 }
 #roadmap-list .panel {
-  border: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 }
 #roadmap-list .checkbox-replace .cb-wrapper,
 #roadmap-list  .radio-replace .cb-wrapper {
@@ -9392,7 +9412,6 @@ ROADMAPS
 }
 #roadmap-list .form-horizontal .checkbox {
   padding-top: 18px;
-  padding-left: 20px;
 }
 #roadmap-list .panel .title {
   position: relative;
@@ -9404,6 +9423,7 @@ ROADMAPS
 #roadmap-list ul {
   list-style: none;
   font-size: 0;
+  padding-left: 0;
 }
 #roadmap-list ul li {
   list-style: none;
@@ -9413,7 +9433,7 @@ ROADMAPS
 #roadmap-list ul li:last-child {
   border-right: none;
 }
-#roadmap-list .row {
+#roadmaps .row {
   margin-bottom: 20px;
 }
 #roadmap-list .panel-heading {
@@ -9434,7 +9454,7 @@ ROADMAPS
 }
 #roadmap-list .panel-heading > .panel-data {
   float: right;
-  border-left: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
 }
 #roadmap-list .panel-heading > .panel-options {
   float: right;
@@ -9464,7 +9484,6 @@ ROADMAPS
 }
 #roadmap-list .short {
   min-height: 100px;
-  min-width: 110px;
 }
 #roadmap-list .xtra-short {
   min-height: 60px;
@@ -9475,13 +9494,55 @@ ROADMAPS
 #roadmap-list ul.icheck-list li {
   border-right: none;
 }
-#roadmap-list > .row {
+#roadmap-list .nav-tabs.reveal-data {
+  margin-top: 5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#roadmap-list .nav-tabs.reveal-data h3 {
+  margin-top: 0;
+}
+#roadmap-list .nav-tabs.reveal-data > li {
+  margin-right: 5%;
+}
+#roadmap-list .reveal-data > li > ul > li {
+  margin-right: 3px;
+}
+#roadmap-list .reveal-data > li > a:hover {
+  border-color: transparent;
+}
+#roadmap-list .reveal-data > li > a:hover,
+#roadmap-list .reveal-data > li > a:focus {
+  background-color: transparent;
+}
+#roadmap-list .content-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#roadmap-list .content-nav li {
+  border-right: 1px solid #ebebeb;
+}
+#roadmap-list .nav-tabs.content-nav > li:first-child > a {
+  margin-left: 0;
+}
+#roadmap-list .nav-tabs.content-nav > li > a {
+  margin-right: 0;
+}
+
+
+#roadmaps .main-content > .row {
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .modal-dialog {
     padding-top: 100px;
   }
+}
+/*****************************
+MODALS
+*****************************/
+#roadmaps .modal-title i {
+  margin-right: 7px;
 }
 /*** Algorithm ******/
 
@@ -9541,9 +9602,11 @@ ROADMAPS
   margin-left: -15px;
   margin-right: -15px;
 }
-
+#roadmap-list .nav-tabs {
+  border-bottom: 0;
+}
 /*** Forms ******/
-#roadmaps .icheck-inline li {
+#roadmaps .inline-list li {
   display: inline-block;
 }
 #roadmaps textarea {
